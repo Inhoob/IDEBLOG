@@ -25,3 +25,21 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.vscode-dark-theme {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.vscode-dark-theme-header {
+  background-color: #333333;
+  padding: 16px;
+}
+
+.vscode-dark-theme-content {
+  padding: 0px;
+  flex-grow: 1;
+}

@@ -1,20 +1,21 @@
 "use client";
-// src/app/pages.tsx
 import React from "react";
-import { usePathname } from "next/navigation";
+
 import Main from "@/pages/Main";
 import Search from "@/pages/Search";
 import Profile from "@/pages/Profile";
+import { usePathname } from "next/navigation";
 
-const Home = () => {
+const Contents = () => {
   const pathname = usePathname();
+
   return (
-    <>
+    <div>
       {pathname === "/" && <Main />}
-      {pathname === "/search" && <Search />}
-      {pathname === "/profile" && <Profile />}
-    </>
+      {pathname === "/Search" && <Search />}
+      {pathname === "/Profile" && <Profile />}
+    </div>
   );
 };
 
-export default Home;
+export default Contents;
